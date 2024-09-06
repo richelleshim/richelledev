@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="w-full  py-5 sm:px-10 px-5 bg-black fixed top-0 left-0 z-10">
+    <header className="w-full  py-5 sm:px-10 px-5 bg-black fixed top-0 left-0 z-20">
       <nav className="flex w-full justify-between items-center screen-max-width">
         {/* Logo */}
 

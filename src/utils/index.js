@@ -62,3 +62,63 @@ export const aboutMeVideo = aboutMeHero;
 
 import reflectionsHero from "/public/images/reflection.mp4";
 export const reflectionVideo = reflectionsHero;
+
+import next from "/public/images/next.svg";
+export const nextArrow = next;
+
+import redNext from "/public/images/redNext.svg";
+export const redNextArrow = redNext;
+
+import previous from "/public/images/previous.svg";
+export const previousArrow = previous;
+
+import hungry from "/public/images/hungry.jpg";
+export const hungryImg = hungry;
+
+import archery from "/public/images/archery.png";
+export const archeryImg = archery;
+
+import sebastien from "/public/images/sebastien.png";
+export const sebastienImg = sebastien;
+
+import kasa from "/public/images/KASA.png";
+export const kasaImg = kasa;
+
+import loveStory from "/public/images/loveStory.png";
+export const loveStoryImg = loveStory;
+
+import camping from "/public/images/camping.png";
+export const campingImg = camping;
+
+import dailyBruin from "/public/images/dailyBruin.png";
+export const dailyBruinImg = dailyBruin;
+
+import statistics from "/public/images/statistics.jpg";
+export const statisticsImg = statistics;
+
+import jhanas from "/public/images/jhanas.png";
+export const jhanasImg = jhanas;
+
+import dataScience from "/public/images/dataScience.png";
+export const dataScienceImg = dataScience;
+
+import perfectionism from "/public/images/perfectionism.png";
+export const perfectionismImg = perfectionism;
+
+import cakeCraft from "/public/images/cakeCraft.png";
+export const cakeCraftImg = cakeCraft;
+
+import values from "/public/images/values.png";
+export const valuesImg = values;
+
+import richelle from "/public/images/richelle.png";
+export const richelleImg = richelle;
+
+import star from "/public/images/star.png";
+export const starImg = star;
+
+import insane from "/public/images/insane.png";
+export const insaneImg = insane;
+
+import studying from "/public/images/studying.png";
+export const studyingImg = studying;

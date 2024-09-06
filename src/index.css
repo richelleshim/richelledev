@@ -97,11 +97,9 @@ nav {
   @apply text-gray font-semibold text-xl md:text-2xl py-10 text-center;
 }
 
-
-
 .card-container {
   margin-top: 2rem;
-  left: 2rem;
+  left: -2rem;
 }
 .card-title {
   position: relative;
@@ -157,4 +155,28 @@ footer p {
 .video,
 .image {
   transition: opacity 0.5s ease-in-out;
+}
+
+
+.nav-link {
+  @apply text-white font-semibold text-[20px] flex items-center relative;
+}
+
+.nav-link:hover {
+  @apply text-red-600;
+}
+
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-10px); /* Adjust as needed */
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+/* Apply hover effect to .nav-link, affecting .arrow */
+.nav-link:hover .arrow {
+  opacity: 1;
+  transform: translateX(0); /* Adjust as needed */
 }
