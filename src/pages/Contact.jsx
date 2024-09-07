@@ -2,6 +2,7 @@ import React from "react";
 import { heroImg, rseries } from "../utils";
 
 const Contact = () => {
+  
   const backgroundImage = { heroImg };
   return (
     <section className="w-full bg-black relative">

@@ -43,7 +43,7 @@ const Hero = () => {
         }}
       >
         {!isHovering && (
-          <div className="w-[90%] z-20">
+          <div className="w-[90%] z-10">
             <img height={100} width={800} src={rseries} />
             <h1 className="text-white text-6xl font-bold">
               Richelle Haein Shim

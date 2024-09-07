@@ -157,15 +157,13 @@ footer p {
   transition: opacity 0.5s ease-in-out;
 }
 
-
 .nav-link {
-  @apply text-white font-semibold text-[20px] flex items-center relative;
+  @apply text-white font-semibold text-[25px] pl-6 flex items-center relative;
 }
 
 .nav-link:hover {
   @apply text-red-600;
 }
-
 
 .arrow {
   opacity: 0;
@@ -179,4 +177,97 @@ footer p {
 .nav-link:hover .arrow {
   opacity: 1;
   transform: translateX(0); /* Adjust as needed */
+}
+
+/* Base styles for Card component */
+.card {
+  @apply bg-black flex-col text-white overflow-visible shadow-lg w-full max-w-[250px] relative;
+}
+
+.card .caption {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: Add some vertical movement */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Add hover effects to the entire card */
+.card:hover {
+  /* Example: scale or adjust the shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6); /* White glow */
+  filter: brightness(1.2); /* Increase brightness to enhance the glow effect */
+}
+
+.fade-background {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.7)
+  );
+  /* Other styles */
+}
+
+.showcase-fade {
+  width: (max-content);
+  height: 926px;
+  background: linear-gradient(
+    90deg,
+    #000 0%,
+    rgba(0, 0, 0, 0.66) 58.82%,
+    rgba(173, 173, 173, 0) 100%
+  );
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+.showcase-container {
+  width: (max-content);
+  height: 926px;
+  overflow: hidden;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.showcase-media {
+  height: 926px;
+  padding-right: 0%;
+  overflow: hidden;
+}
+
+.github-button {
+  width: 130px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #57585d;
+}
+
+.hover-button {
+  width: 120px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #f4f4f4;
+}
+
+.navgit-button {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  background: red;
 }

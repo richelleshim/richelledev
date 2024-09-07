@@ -24,12 +24,15 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
     setIsHovering(false);
     if (videoRef.current) {
       videoRef.current.pause();
-      videoRef.current.currentTime = videoRef.cu; // Reset video to start
+      videoRef.current.currentTime = 0; // Reset video to start
     }
   };
 
   return (
-    <section className="relative w-full h-[68vh] opacity-0 bg-black" id="intro">
+    <section
+      className="relative w-full h-[68vh] pt-10 opacity-0 bg-black"
+      id="intro"
+    >
       <div
         className=" absolute w-full h-full flex-center inset-0 bg-gray-900 bg-opacity-50"
         onMouseEnter={handleMouseEnter}
@@ -42,12 +45,9 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
         }}
       >
         {!isHovering && (
-          <div className="w-[90%] z-10">
+          <div className="w-[90%] ] z-10">
             <img height={100} width={800} src={rseries} />
-
-            <h1 className="text-white text-6xl font-bold  ">
-              {title}
-            </h1>
+            <h1 className="text-white text-6xl font-bold   ">{title}</h1>
             <p className="text-gray-50 text-lg mt-2 w-[75%]">{subtitle}</p>
           </div>
         )}

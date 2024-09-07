@@ -1,30 +1,30 @@
-import hero from "/public/images/hero.png";
-import logo from "/public/images/logo.png";
+import hero from "/images/hero.png";
+import logo from "/images/logo.png";
 
 export const heroImg = hero;
 export const logoImg = logo;
 
-import greenJuice from "/public/images/greenJuice.png";
-import beachBrunch from "/public/images/brunch.png";
+import greenJuice from "/images/aboutMe/greenJuice.png";
+import beachBrunch from "/images/aboutMe/brunch.png";
 
 export const greenJuiceImg = greenJuice;
 export const beachBrunchImg = beachBrunch;
 
-import cafeRun from "/public/images/cafe.png";
-import tacoRun from "/public/images/tacoRun.png";
+import cafeRun from "/images/aboutMe/cafe.png";
+import tacoRun from "/images/aboutMe/tacoRun.png";
 
 export const tacoImg = tacoRun;
 export const cafeImg = cafeRun;
 
-import rseriesLogo from "/public/r-series.svg";
+import rseriesLogo from "/assets/r-series.svg";
 export const rseries = rseriesLogo;
 
-import artMuseum from "/public/images/artMuseum.png";
-import cafePic from "/public/images/cafeRun.png";
-import cats from "/public/images/cats.png";
-import mathematicsBoard from "/public/images/mathematicsBoard.png";
-import mathNotes from "/public/images/mathNotes.png";
-import novaSecondYears from "/public/images/novaSecondYears.png";
+import artMuseum from "/images/artMuseum.png";
+import cafePic from "/images/aboutMe/cafeRun.png";
+import cats from "/images/aboutMe/cats.png";
+import mathematicsBoard from "/images/aboutMe/mathematicsBoard.png";
+import mathNotes from "/images/aboutMe/mathNotes.png";
+import novaSecondYears from "/images/aboutMe/novaSecondYears.png";
 
 export const artMuseumImg = artMuseum;
 export const cafePicImg = cafePic;
@@ -33,92 +33,125 @@ export const mathematicsBoardImg = mathematicsBoard;
 export const mathNotesImg = mathNotes;
 export const novaSecondYearsImg = novaSecondYears;
 
-import UCLAgame from "/public/images/UCLAGame.png";
-import weightGain from "/public/images/weightGain.png";
+import UCLAgame from "/images/aboutMe/UCLAGame.png";
+import weightGain from "/images/aboutMe/weightGain.png";
 
 export const UCLAgameImg = UCLAgame;
 export const weightGainImg = weightGain;
 
-import socal from "/public/images/socal.png";
+import socal from "/images/aboutMe/socal.png";
 export const socalImg = socal;
 
-import sunset from "/public/images/sunset.png";
+import sunset from "/images/aboutMe/sunset.png";
 export const sunsetImg = sunset;
 
-import lateNightCode from "/public/images/lateNightCode.png";
+import lateNightCode from "/images/aboutMe/lateNightCode.png";
 export const lateNightCodeImg = lateNightCode;
 
-import hackNight from "/public/images/hackNight.png";
+import hackNight from "/images/aboutMe/hackNight.png";
 export const hackNightImg = hackNight;
 
-import nova from "/public/images/nova.png";
+import nova from "/images/aboutMe/nova.png";
 export const novaImg = nova;
 
-import novaBooth from "/public/images/nova.mp4";
+import novaBooth from "/videos/nova.mp4";
 export const novaVideo = novaBooth;
 
-import aboutMeHero from "/public/images/aboutMeVideo.mp4";
+import aboutMeHero from "/videos/aboutMeVideo.mp4";
 export const aboutMeVideo = aboutMeHero;
 
-import reflectionsHero from "/public/images/reflection.mp4";
+import reflectionsHero from "/videos/reflection.mp4";
 export const reflectionVideo = reflectionsHero;
 
-import next from "/public/images/next.svg";
+import next from "/assets/next.svg";
 export const nextArrow = next;
 
-import redNext from "/public/images/redNext.svg";
+import redNext from "/assets/redNext.svg";
 export const redNextArrow = redNext;
 
-import previous from "/public/images/previous.svg";
+import previous from "/assets/previous.svg";
 export const previousArrow = previous;
 
-import hungry from "/public/images/hungry.jpg";
+import hungry from "/images/aboutMe/hungry.jpg";
 export const hungryImg = hungry;
 
-import archery from "/public/images/archery.png";
+import archery from "/images/aboutMe/archery.png";
 export const archeryImg = archery;
 
-import sebastien from "/public/images/sebastien.png";
+import sebastien from "/images/aboutMe/sebastien.png";
 export const sebastienImg = sebastien;
 
-import kasa from "/public/images/KASA.png";
+import kasa from "/images/aboutMe/KASA.png";
 export const kasaImg = kasa;
 
-import loveStory from "/public/images/loveStory.png";
+import loveStory from "/images/aboutMe/loveStory.png";
 export const loveStoryImg = loveStory;
 
-import camping from "/public/images/camping.png";
+import camping from "/images/aboutMe/camping.png";
 export const campingImg = camping;
 
-import dailyBruin from "/public/images/dailyBruin.png";
+import dailyBruin from "/images/aboutMe/dailyBruin.png";
 export const dailyBruinImg = dailyBruin;
 
-import statistics from "/public/images/statistics.jpg";
+import statistics from "/images/aboutMe/statistics.jpg";
 export const statisticsImg = statistics;
 
-import jhanas from "/public/images/jhanas.png";
+import jhanas from "/images/aboutMe/jhanas.png";
 export const jhanasImg = jhanas;
 
-import dataScience from "/public/images/dataScience.png";
+import dataScience from "/images/aboutMe/dataScience.png";
 export const dataScienceImg = dataScience;
 
-import perfectionism from "/public/images/perfectionism.png";
+import perfectionism from "/images/aboutMe/perfectionism.png";
 export const perfectionismImg = perfectionism;
 
-import cakeCraft from "/public/images/cakeCraft.png";
+import cakeCraft from "/images/aboutMe/cakeCraft.png";
 export const cakeCraftImg = cakeCraft;
 
-import values from "/public/images/values.png";
+import values from "/images/aboutMe/values.png";
 export const valuesImg = values;
 
-import richelle from "/public/images/richelle.png";
+import richelle from "/images/aboutMe/richelle.png";
 export const richelleImg = richelle;
 
-import star from "/public/images/star.png";
+import star from "/images/aboutMe/star.png";
 export const starImg = star;
 
-import insane from "/public/images/insane.png";
+import insane from "/images/aboutMe/insane.png";
 export const insaneImg = insane;
 
-import studying from "/public/images/studying.png";
+import studying from "/images/aboutMe/studying.png";
 export const studyingImg = studying;
+
+import spotifyHero from "/images/projects/spotifyHero.png";
+export const spotifyHeroImg = spotifyHero;
+
+import github from "/images/projects/github.svg";
+export const githubIcon = github;
+
+import hover from "/images/projects/hover.svg";
+export const hoverIcon = hover;
+
+import spotifyVid from "/videos/spotify.mp4";
+export const spotifyVideo = spotifyVid;
+
+import rProduction from "/images/rProduction.png";
+export const rProductionImg = rProduction;
+
+import spotifyLogo from "/assets/spotify.svg";
+export const spotifySvg = spotifyLogo;
+
+import plutusLogo from "/images/projects/plutus.png";
+export const plutusLogoImg = plutusLogo;
+
+import bruinGramHero from "/images/projects/bruinGram.png";
+export const bruinGramHeroImg = bruinGramHero;
+
+import bruinVid from "/videos/bruingramVideo.mp4";
+export const bruinGramVid = bruinVid;
+
+import bruinLogo from "/images/projects/bruingramLogo.svg";
+export const bruinLogoImg = bruinLogo;
+
+import bruingramTitle from "/images/projects/bruinGramTitle.png";
+export const bruingramTitleImg = bruingramTitle;
