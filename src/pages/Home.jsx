@@ -82,6 +82,7 @@ const Home = () => {
           <div id="item4" className="opacity-0">
             <Categories title="What I want to learn!" items={learn} />
           </div>
+
         </div>
       </div>
     </section>
@@ -89,3 +90,4 @@ const Home = () => {
 };
 
 export default Home;
+

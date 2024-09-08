@@ -32,6 +32,7 @@ canvas {
 }
 
 .screen-max-width {
+  
   margin-inline-start: auto;
   margin-inline-end: auto;
   max-width: 1120px;
@@ -53,6 +54,7 @@ p {
 
 /* Screen width constraint */
 .screen-max-width {
+  @apply bg-black;
   margin-inline: auto;
   max-width: 1120px;
 }
@@ -105,13 +107,8 @@ nav {
   position: relative;
   bottom: 0;
   left: 0;
-  padding: 0.5rem; /* Add padding to create some space around the title */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Add a semi-transparent background to make the title more readable */
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* .hero-title {
@@ -145,11 +142,11 @@ nav {
 
 /* Footer */
 footer {
-  @apply bg-gray-800 text-center py-4;
+  @apply bg-black text-center py-4;
 }
 
 footer p {
-  @apply text-gray-400;
+  @apply bg-black;
 }
 
 .video,
@@ -167,42 +164,82 @@ footer p {
 
 .arrow {
   opacity: 0;
-  transform: translateX(-10px); /* Adjust as needed */
+  transform: translateX(-10px);
   transition:
     opacity 0.3s ease-out,
     transform 0.3s ease-out;
 }
 
-/* Apply hover effect to .nav-link, affecting .arrow */
 .nav-link:hover .arrow {
   opacity: 1;
-  transform: translateX(0); /* Adjust as needed */
+  transform: translateX(0);
+}
+.card-wrap {
+  transition: transform 0.3s ease;
 }
 
-/* Base styles for Card component */
-.card {
-  @apply bg-black flex-col text-white overflow-visible shadow-lg w-full max-w-[250px] relative;
+.card-wrap:hover {
+  transform: scale(1.05);
 }
+.card {
+  @apply bg-black flex-col text-white overflow-hidden shadow-lg w-full relative;
+  transition: transform 0.3s ease;
+}
+/* .card img {
+  transition: transform 0.3s ease;
+} */
+
+/* .card:hover img {
+  transform: scale(1.1);
+} */
+
+.card-content {
+  transition: transform 0.3s ease;
+}
+/* .card:hover .content {
+  transform: scale(1.1);
+} */
+
+/* .categories-container {
+  display: flex;
+  padding: 0 55px;
+}
+
+.categories-card {
+  background: green;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  transition: transform 300ms ease 100ms;
+}
+
+.categories-container .categories-card {
+  transform: translateX(-25%);
+}
+.categories-card ~ .item {
+  transform: translateX(25%);
+}
+
+.categories-card:hover {
+  transform: scale(1.5);
+} */
 
 .card .caption {
   opacity: 0;
-  transform: translateY(20px); /* Optional: Add some vertical movement */
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
 }
 
 .card:hover .caption {
   opacity: 1;
-  transform: translateY(0);
-}
-
-/* Optional: Add hover effects to the entire card */
-.card:hover {
-  /* Example: scale or adjust the shadow on hover */
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6); /* White glow */
-  filter: brightness(1.2); /* Increase brightness to enhance the glow effect */
+  /* transform: translateY(0); */
 }
 
 .fade-background {
@@ -243,6 +280,11 @@ footer p {
     url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
+.project-modal {
+  @apply text-white text-sm;
+  width: 120px;
+  height: 10px;
+}
 .showcase-media {
   height: 926px;
   padding-right: 0%;
@@ -250,7 +292,7 @@ footer p {
 }
 
 .github-button {
-  width: 130px;
+  width: 110px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -258,7 +300,7 @@ footer p {
 }
 
 .hover-button {
-  width: 120px;
+  width: 100px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -270,4 +312,8 @@ footer p {
   height: 35px;
   flex-shrink: 0;
   background: red;
+}
+
+.modal {
+  color: black;
 }

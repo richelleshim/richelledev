@@ -1,8 +1,21 @@
 import React from "react";
 import RSeries from "../components/RSeries";
-import { heroImg, plutusLogoImg, spotifyHeroImg, spotifyVideo } from "../utils";
+import {
+  bruinGramHeroImg,
+  bruinGramVid,
+  bruingramTitleImg,
+  heroImg,
+  plutusLogoImg,
+  spotifyHeroImg,
+  spotifyVideo,
+} from "../utils";
 import Categories from "../components/Categories";
 import { favoriteList, progtools, projects } from "../constants";
+import ProjectModal from "../components/ProjectModal";
+import ProjectDescription from "../components/ProjectDescription";
+import ProjectCard from "../components/ProjectCard";
+import ProjectCategories from "../components/ProjectCategories";
+import ComingSoon from "../components/ComingSoon";
 
 const Projects = () => {
   return (
@@ -17,29 +30,84 @@ const Projects = () => {
           />
           <div className=" w-full flex-center ">
             <div className="flex-col">
-              <Categories title="Projects" items={projects} />
-              <Categories
+              {/* <ComingSoon /> */}
+              {/* <Categories
+                title="Projects"
+                page="Projects"
+                items={projects}
+              ></Categories> */}
+
+              <ProjectCategories />
+
+              {/* <ProjectCard
+              title="Bruingram"
+              rating="50%"
+              season="2023 | 3 episodes"
+              caption="a fun take on a UCLA-centered social media app"
+              image={bruinGramHeroImg}
+              year="2024">
+                <ProjectDescription
+                  title=""
+                  titleImg={bruingramTitleImg}
+                  heroImg={bruinGramHeroImg}
+                  subtitle="Bruingram"
+                  titleImgWidth="300px"
+                  titleImgHeight="70px"
+                  genre="2024 | Design + Web Dev"
+                  paragraphs={[
+                    "Working in a team of 6, we created an application with the inspiration of Hinge, Instagram, and Facebook. We thought that it would be cool to create a social media application specific for Bruins, where users could filter out other users based on Major and Year to make friends, seek out career advice, and find roommates!        ",
+                  ]}
+                  technologies="React, MaterialUI, Firebase, Git"
+                  directors="Elizabeth, Yousra, Chai, Jennifer, Daniel, Richelle"
+                  isDirectors={true}
+                  heroVideo={bruinGramVid}
+                />
+                children, title, rating, season, caption, image, year
+              </ProjectCard>
+              <ProjectModal>
+                <ProjectDescription
+                  title=""
+                  titleImg={bruingramTitleImg}
+                  heroImg={bruinGramHeroImg}
+                  subtitle="Bruingram"
+                  titleImgWidth="300px"
+                  titleImgHeight="70px"
+                  genre="2024 | Design + Web Dev"
+                  paragraphs={[
+                    "Working in a team of 6, we created an application with the inspiration of Hinge, Instagram, and Facebook. We thought that it would be cool to create a social media application specific for Bruins, where users could filter out other users based on Major and Year to make friends, seek out career advice, and find roommates!        ",
+                  ]}
+                  technologies="React, MaterialUI, Firebase, Git"
+                  directors="Elizabeth, Yousra, Chai, Jennifer, Daniel, Richelle"
+                  isDirectors={true}
+                  heroVideo={bruinGramVid}
+                />
+              </ProjectModal>
+              <ProjectModal>
+                <ProjectDescription
+                  title=""
+                  titleImg={bruingramTitleImg}
+                  heroImg={bruinGramHeroImg}
+                  subtitle="Bruingram"
+                  titleImgWidth="300px"
+                  titleImgHeight="70px"
+                  genre="2024 | Design + Web Dev"
+                  paragraphs={[
+                    "Working in a team of 6, we created an application with the inspiration of Hinge, Instagram, and Facebook. We thought that it would be cool to create a social media application specific for Bruins, where users could filter out other users based on Major and Year to make friends, seek out career advice, and find roommates!        ",
+                  ]}
+                  technologies="React, MaterialUI, Firebase, Git"
+                  directors="Elizabeth, Yousra, Chai, Jennifer, Daniel, Richelle"
+                  isDirectors={true}
+                  heroVideo={bruinGramVid}
+                />
+              </ProjectModal> */}
+              {/* <Categories
                 title="Programing Languages + Tools"
                 items={progtools}
-              />
+              /> */}
             </div>
           </div>
         </div>
       </div>
-      <ProjectDescription
-        title=""
-        titleImg={plutusLogoImg}
-        heroImg={spotifyHeroImg}
-        subtitle="Plutus"
-        titleImgWidth="300px"
-        titleImgHeight="70px"
-        genre="2024 | Design + Web Dev"
-        paragraphs={[
-          "Plutus is a banking application that allows users to create their own account, connect their bank using Plaid, and transfer payments to other users. The home interface displays transactions, their current balance, and their bank accounts.",
-        ]}
-        technologies="Appwrite, Sentry, Plaid, Figma, Nextjs"
-        heroVideo={spotifyVideo}
-      />
     </section>
   );
 };

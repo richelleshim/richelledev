@@ -72,14 +72,14 @@ const ProjectShowcase = () => {
           </p>
 
           <div className=" flex align-left grid-cols-4 gap-4">
-            <button className="hover-button text-black rounded">
+            <button className="hover-button text-sm text-black rounded">
               <div className="flex-center font-semibold gap-2">
                 <img src={hoverIcon} width={20} height={20} />
                 HOVER
               </div>
             </button>
             <button className="github-button  text-white px-4 py-2 rounded">
-              <div className="flex-center text-lg  gap-2 font-semibold">
+              <div className="flex-center text-med  gap-2 font-semibold">
                 <img src={githubIcon} width={40} height={40} />
                 src
               </div>
@@ -93,7 +93,7 @@ const ProjectShowcase = () => {
           onMouseLeave={handleMouseLeave}
         >
           {/* Overlay gradient */}
-          <div className="absolute w-[75%] h-full bg-gradient-to-l from-transparent to-black z-10 hover:opacity-5"></div>
+          <div className="absolute w-[75%] h-full bg-gradient-to-l from-transparent to-black z-10"></div>
           {!isHovering && (
             <img
               src={spotifyHeroImg}

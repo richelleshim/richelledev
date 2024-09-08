@@ -3,8 +3,10 @@ import Card from "./Card";
 import { nextArrow, previousArrow, redNextArrow } from "../utils";
 import { NavLink } from "react-router-dom";
 import gsap from "gsap";
+import ProjectCard from "./ProjectCard";
 
-const Categories = ({ title, items, link = "" }) => {
+const Categories = ({ page = "", title, items, link = "" }) => {
+  const isProjects = page === "Projects";
   const validLink = link === "" ? false : true;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
@@ -12,6 +14,7 @@ const Categories = ({ title, items, link = "" }) => {
   const totalItems = items.length;
   // const autoScrollInterval = 3000; // 3 seconds
   const cardRefs = useRef([]);
+  const itemsPerTransitions = 1;
 
   // Move to the next set of items
   const handleNext = () => {
@@ -19,13 +22,28 @@ const Categories = ({ title, items, link = "" }) => {
       prevIndex + 1 >= totalItems ? 0 : prevIndex + 1,
     );
   };
-
   // Move to the previous set of items
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? totalItems - 1 : prevIndex - 1,
     );
   };
+
+  useEffect(() => {
+    gsap.fromTo(
+      cardRefs.current,
+      { opacity: 0, x: 50 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.3,
+        stagger: 0.2,
+        ease: "power2.out",
+      },
+    );
+  }, [currentIndex]);
+
+  const translateX = -currentIndex * (100 / itemsPerPage); // Calculate the translateX based on the current index and items per page
 
   // Calculate the items to display
   const visibleItems =
@@ -36,21 +54,23 @@ const Categories = ({ title, items, link = "" }) => {
         ]
       : items.slice(currentIndex, currentIndex + itemsPerPage);
 
-  useEffect(() => {
-    gsap.to("#card", { opacity: 1, delay: 1 });
-  }, [visibleItems]);
+  // useEffect(() => {
+  //   cardRefs.current.forEach((card, index) => {
+  //     if (card) {
+  //       // Add a 'visible' class to animate the card in
+  //       card.classList.add("visible");
+  //     }
+  //   });
+  // }, [visibleItems]);
 
   // useEffect(() => {
-  //   if (isHovering) return; // Do not auto-scroll if hovering
-
-  //   // Set up an interval to automatically move to the next set of items
+  //   if (isHovering) return; // Don't scroll if hovering
   //   const intervalId = setInterval(() => {
-  //     handleNext();
+  //     handleNext(); // Automatically scroll every 3 seconds
   //   }, autoScrollInterval);
 
-  //   // Clean up the interval on component unmount or hover state change
-  //   return () => clearInterval(intervalId);
-  // }, [currentIndex, isHovering]);
+  //   return () => clearInterval(intervalId); // Clean up interval on unmount or hover state change
+  // }, [isHovering, currentIndex]);
 
   // Handle card hover
   const handleCardHover = (index) => {
@@ -62,7 +82,7 @@ const Categories = ({ title, items, link = "" }) => {
   };
 
   return (
-    <div className="flex-center h-[46] screen-max-width">
+    <div className="flex-center h-[46] screen-max-width ">
       <div className="card-container relative">
         {validLink ? (
           <NavLink className="nav-link" to={link}>
@@ -81,14 +101,14 @@ const Categories = ({ title, items, link = "" }) => {
           </h2>
         )}
         <div
-          className="flex overflow-hidden  w-full"
+          className="flex overflow-visible w-full"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
           <button className="opacity-1 pr-3 left-0" onClick={handlePrev}>
             <img src={previousArrow} height={15} width={15} />
           </button>
-          <div className="grid grid-cols-4 gap-4 opacity-0" id="card">
+          <div className="grid grid-cols-4 gap-4 overflow-auto">
             {visibleItems.map((list, index) => (
               <Card
                 key={list.id}

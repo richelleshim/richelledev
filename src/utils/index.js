@@ -155,3 +155,14 @@ export const bruinLogoImg = bruinLogo;
 
 import bruingramTitle from "/images/projects/bruinGramTitle.png";
 export const bruingramTitleImg = bruingramTitle;
+
+
+import bruinGramCard from "/images/projects/bruinGramCard.png";
+export const bruinGramCardImg = bruinGramCard;
+
+
+import richflix from "/images/RICHFLIX.png";
+export const richflixImg = richflix;
+
+import comingSoon from "/images/comingSoon.png";
+export const comingSoonImg = comingSoon;

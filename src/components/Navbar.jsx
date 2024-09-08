@@ -7,8 +7,10 @@ const Navbar = () => {
     <header className="bg-black fixed top-0 left-0 z-20">
       <nav className="flex w-full justify-between items-center">
         {/* Logo */}
+        <a href="/">
+          <img src={logoImg} alt="Richelle" width={150} height={50} />
+        </a>
 
-        <img src={logoImg} alt="Richelle" width={150} height={50} />
         {/* Navigation Links */}
         <div className="flex justify-center space-x-5 max-sm:hidden right-2">
           {navLists.map((nav) => (

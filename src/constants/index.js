@@ -6,6 +6,7 @@ export const navLists = [
   { name: "Contact", route: "/contact" },
 ];
 
+import ProjectDescription from "../components/ProjectDescription";
 import {
   beachBrunchImg,
   greenJuiceImg,
@@ -36,6 +37,9 @@ import {
   starImg,
   insaneImg,
   studyingImg,
+  bruingramTitleImg,
+  bruinGramHeroImg,
+  bruinGramVid,
 } from "../utils";
 
 export const favoriteList = [
@@ -208,27 +212,28 @@ export const season1 = [
 export const season2 = [
   {
     id: 1,
-    title: "Values: Social Good & Accessibility",
+    title: "Social Good & Accessibility",
     rating: "100%",
     season: "2 Seasons",
     year: "2022",
-    caption: "",
+    caption:
+      "Believing that technology holds the power to create lasting positive change, I am dedicated to leveraging innovation for the greater good. Joining Nova, Tech for Good at UCLA, has allowed me to explore these values further and put them into action",
     image: greenJuiceImg,
   },
   {
     id: 2,
-    title: "Values: Learning",
+    title: "Education != Learning",
     rating: "100%",
     season: "4 Seasons",
     year: "2020",
     caption:
-      "After going through a 'slump' in college, I realize that I love learning, just not perhaps in the traditional classroom setting. Learning shouldn't be confined to your formal education, and I'm always determined to keep learning on my own!",
+      "After going through a 'slump' in college, I realize that I love learning, just not perhaps in the traditional classroom setting. A quote I learned from my friend @neelr is that your education shouldn't get in the way of learning! Here's to a life to self studying! ",
     image: tacoImg,
   },
 
   {
     id: 3,
-    title: "Values: the truth",
+    title: "Math & The Truth",
     rating: "100000%",
     season: "20 Seasons",
     year: "2003",
@@ -239,12 +244,12 @@ export const season2 = [
 
   {
     id: 4,
-    title: "Values: Transparency",
+    title: "What is...happiness?",
     rating: "100%",
     season: "2 Seasons",
     year: "2022",
     caption:
-      " Similar to valuing the truth, I value transparency and communication. I value accountability, and I believe that accountability and transparency come together. I always try to come forward first about my wrongdoings whenever I mess up.",
+      "For the past few years, I found myself chasing what I thought to be happiness, thinking it was the key to life. But the more I pursued it, the more unfulfilled I became. I've realized that life isn't about happiness alone—it's about finding meaning, purpose, and fulfillment. True contentment lies in living a life aligned with values and impact, not fleeting moments of joy.",
     image: cafeImg,
   },
 ];
@@ -295,7 +300,7 @@ export const projects = [
     id: 1,
     title: "Plutus Banking App",
     rating: "100%",
-    season: "1 Season",
+    season: "1 Seasons",
     year: "2024",
     caption: "",
     image: greenJuiceImg,
