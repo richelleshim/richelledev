@@ -20,14 +20,20 @@ const ProjectModal = ({
 
   return (
     <>
-      <Button
+      <div
+        onClick={() => setOpen(true)}
+        className="cursor-pointer  hover:text-red-600"
+      >
+        <h1 className="text-sm">Learn More!</h1>
+      </div>
+      {/* <Button
         // sx={{ color: "white" }}
         variant="plain"
         color="neutral"
         onClick={() => setOpen(true)}
       >
         Learn More!
-      </Button>
+      </Button> */}
       <Transition in={open} timeout={400}>
         {(state) => (
           <Modal

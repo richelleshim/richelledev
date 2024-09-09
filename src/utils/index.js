@@ -166,3 +166,24 @@ export const richflixImg = richflix;
 
 import comingSoon from "/images/comingSoon.png";
 export const comingSoonImg = comingSoon;
+
+
+import graceHopper from "/images/aboutMe/graceHopper.png";
+export const graceHopperImg = graceHopper;
+
+import jaron from "/images/aboutMe/jaron.png";
+export const jaronImg = jaron;
+
+import openSource from "/images/aboutMe/openSource.png";
+export const openSourceImg = openSource;
+
+import socrates from "/images/aboutMe/socrates.png";
+export const socratesImg = socrates;
+
+import timBernersLee from "/images/aboutMe/timBernersLee.png";
+export const timBernersLeeImg = timBernersLee;
+
+
+import neflix from "/videos/netflix.mp3";
+export const netflixSound = neflix;
+

@@ -6,7 +6,6 @@ export const navLists = [
   { name: "Contact", route: "/contact" },
 ];
 
-import ProjectDescription from "../components/ProjectDescription";
 import {
   beachBrunchImg,
   greenJuiceImg,
@@ -37,9 +36,12 @@ import {
   starImg,
   insaneImg,
   studyingImg,
-  bruingramTitleImg,
-  bruinGramHeroImg,
-  bruinGramVid,
+  comingSoonImg,
+  graceHopperImg,
+  openSourceImg,
+  timBernersLeeImg,
+  socratesImg,
+  jaronImg,
 } from "../utils";
 
 export const favoriteList = [
@@ -257,41 +259,67 @@ export const season2 = [
 export const season3 = [
   {
     id: 1,
-    title: "",
-    rating: "",
-    season: "",
-    year: "",
-    caption: "",
-    image: "",
+    title: "Optimist",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2003-?",
+    caption:
+      'My favorite quote from Jaron Lanier is that "It is the critics who are the true optimists." I always want to look at the world and ask "how can this be better". I want search for solutions instead of complaining.',
+    image: jaronImg,
   },
+
   {
     id: 2,
-    title: "",
-    rating: "",
-    season: "",
-    year: "",
-    caption: "",
-    image: "",
+    title: "Open-Minded",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2024-?",
+    caption:
+      "As Grace Hopper once said, 'The most dangerous phrase in the language is \"We've always done it this way.\"' I want to constantly embrace and entertain new ideas, no matter how unfamilar they may seem.",
+    image: graceHopperImg,
   },
 
   {
     id: 3,
-    title: "",
-    rating: "",
-    season: "",
-    year: "",
-    caption: "",
-    image: "",
+    title: "Ethical",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2024-?",
+    caption:
+      'Tim Berners-Lee reminds us, "The Web does not just connect machines, it connects people." I aspire to build technology that serves humanity, ensuring ethics and empathy are at the core of every line of code. Technology should not drive people apart',
+    image: timBernersLeeImg,
+  },
+  {
+    id: 4,
+    title: "Open Source Contributor",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2024-?",
+    caption:
+      "This tweet lives in my mind rent-free. However, adding on to this idea, I want to build enough knowledge to be able to contribute to open source projects. I believe that open source enables global collaboration and democratizes technology!",
+    image: openSourceImg,
   },
 
   {
-    id: 4,
-    title: "",
-    rating: "",
-    season: "",
-    year: "",
-    caption: "",
-    image: "",
+    id: 5,
+    title: "Curious",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2003-?",
+    caption:
+      '"I live by the words of Socrates: "The only true wisdom is in knowing you know nothing." When I entered college, I thought I knew everything. That was a fatal mindset that I never want to have again.',
+    image: socratesImg,
+  },
+
+  {
+    id: 6,
+    title: "Evolving",
+    rating: "0%",
+    season: "~80 Seasons",
+    year: "2024-?",
+    caption:
+      "This journey of building myself should never end, no matter how old I get.",
+    image: comingSoonImg,
   },
 ];
 
@@ -530,7 +558,7 @@ export const brainChemistry = [
     season: "2 Seasons",
     year: "2022",
     caption:
-      "I used to believe that with a strong mentality, you could do anything. However, I realize that the foundation for this mentality lies in your physical health. These last 2 years have been a mess with not sleeping, irregular eating patterns (a cycle of losing and gaining 10 lbs in a 2 week period), and not exercising has set my mental health and efficiency at an all time low. I realized that I need to have a proper physical foundation to get me through my day!",
+      "I used to believe that with a strong mentality, you could do anything. However, the foundation for this lies in physical health. These last 2 years have been a mess with not sleeping, irregular eating patterns (losing and gaining 10 lbs every 2 weeks), and not exercising. I realized that I need to have a proper physical foundation to help me reach my goals!",
     image: UCLAgameImg,
   },
 
@@ -541,7 +569,7 @@ export const brainChemistry = [
     season: "1 Season",
     year: "2024",
     caption:
-      "Peaking my interest in computer graphics, this website changed me. it was the first time that I was touched by a website on an emotional level!",
+      "Peaking my interest in computer graphics, this website changed me. it was the first time that I was touched by a website on an emotional level! I believe that 3d websites combined with VR will be the future website experience for companies to communicate more effectively with consumers!",
     image: sebastienImg,
   },
   {
@@ -551,7 +579,7 @@ export const brainChemistry = [
     season: "1 Season",
     year: "2024",
     caption:
-      "This was a test of mental strength for me. 7 days, no food, just water.",
+      "7 days, no food, just water. I want to be comfortable with discomfort, so water fasting is an approach to gain mental clarity and build mental strength. For the last 2 years, I have done a yearly 7 day water fast. Next year, I want to increase this to 10-14 days in addition to monthly short-term fasts. ",
     image: hungryImg,
   },
 ];

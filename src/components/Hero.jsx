@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { heroImg, novaImg, novaVideo, rseries } from "../utils";
+import { heroImg, netflixSound, novaImg, novaVideo, rseries } from "../utils";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Categories from "./Categories";
@@ -9,17 +9,17 @@ import DescriptionModal from "./DescriptionModal";
 const Hero = () => {
   const videoRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
-
-  // Play video on hover
-  const handleMouseEnter = () => {
-    setIsHovering(false);
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
   useGSAP(() => {
     gsap.to("#hero", { opacity: 1, delay: 1 });
   }, []);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+    if (videoRef.current) {
+      gsap.to(videoRef.current, { opacity: 1, duration: 1.5 });
+      videoRef.current.play();
+    }
+  };
 
   // Stop video on mouse leave
   const handleMouseLeave = () => {
@@ -34,8 +34,8 @@ const Hero = () => {
     <section className="relative w-full h-[75vh] opacity-0 bg-black" id="hero">
       <div
         className=" absolute w-full h-full flex-center inset-0 bg-gray-900 bg-opacity-50"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
         style={{
           backgroundImage: `url(${novaImg})`,
           backgroundSize: "cover",
@@ -50,6 +50,10 @@ const Hero = () => {
               Richelle Haein Shim
             </h1>
             <p className="text-2xl mt-2 text-white">Welcome to my website!</p>
+            <p className="text-sm mt-2 text-white">
+              (hover to the right to play!)
+            </p>
+
             <DescriptionModal
               title="Hello!"
               heroImg={novaImg}
@@ -64,6 +68,11 @@ const Hero = () => {
             />
           </div>
         )}
+        <div
+          className="w-1/2 h-full absolute right-0 z-40"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        ></div>{" "}
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
         {isHovering && (
           <video

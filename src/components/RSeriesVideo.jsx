@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { rseries } from "../utils";
+import { netflixSound, rseries } from "../utils";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -9,14 +9,21 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
   }, []);
 
   const videoRef = useRef(null);
+  const audioRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
 
-  // Play video on hover
   const handleMouseEnter = () => {
     setIsHovering(true);
-    if (videoRef.current) {
-      videoRef.current.play();
+    if (audioRef.current) {
+      audioRef.current.play();
     }
+
+    setTimeout(() => {
+      if (videoRef.current) {
+        gsap.to(videoRef.current, { opacity: 1, duration: 1.5 });
+        videoRef.current.play();
+      }
+    }, 2000);
   };
 
   // Stop video on mouse leave
@@ -24,7 +31,11 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
     setIsHovering(false);
     if (videoRef.current) {
       videoRef.current.pause();
-      videoRef.current.currentTime = 0; // Reset video to start
+      videoRef.current.currentTime = 0;
+    }
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
     }
   };
 
@@ -44,6 +55,8 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
           backgroundColor: "bg-gray-900 bg-opacity-50",
         }}
       >
+        <audio ref={audioRef} src={netflixSound} />
+
         {!isHovering && (
           <div className="w-[90%] ] z-10">
             <img height={100} width={800} src={rseries} />

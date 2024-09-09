@@ -19,20 +19,16 @@ const ProjectCard = forwardRef(
             </div>
           </div>
           <div className="p-1 pl-2">
-            <div className="text-white font-semibold text-md">
-              {title} <ProjectModal>{children}</ProjectModal>
-            </div>
-            <div className="flex gap-1">
+            <div className="text-white font-semibold text-md">{title}</div>
+            <div className="flex gap-2">
               <div className="text-green-500 font-bold text-sm">
                 {rating} {" Match"}
               </div>
-
               <div className="text-gray-200 font-semibold text-sm">
-                {/* {seasonExists && (
-                  <>
-                    {" | "} {season}
-                  </>
-                )} */}
+                <div className="flex gap-2">
+                  {" | "}
+                  <ProjectModal>{children}</ProjectModal>
+                </div>
               </div>
             </div>
           </div>
