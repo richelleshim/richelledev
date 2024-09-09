@@ -4,14 +4,7 @@ import Modal from "@mui/joy/Modal";
 import ModalDialog from "@mui/joy/ModalDialog";
 import DialogContent from "@mui/joy/DialogContent";
 import { useRef, useState } from "react";
-import {
-  bruinGramHeroImg,
-  bruinGramVid,
-  bruingramTitleImg,
-  rseries,
-} from "../utils";
 import { ModalClose } from "@mui/joy";
-import ProjectDescription from "./ProjectDescription";
 
 const ProjectModal = ({
   children,
