@@ -65,13 +65,13 @@ const Hero = () => {
           </div>
         )}
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
-        {!isHovering && (
+        {isHovering && (
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover flex"
             autoPlay
             playsInline
-            // loop
+            loop
           >
             <source src={novaVideo} type="video/mp4" />
           </video>
