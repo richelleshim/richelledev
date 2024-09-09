@@ -15,11 +15,12 @@ const ComingSoon = ({ heroImg }) => {
             }}
           >
             <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+
             {/* Dark overlay */}
             <div className="relative z-5">
               <div className="">
-                <img height={50} width={1000} src={rseries} />
-
+                {/* <img height={50} width={1000} src={rseries} />
+                <h1 className="text-red-600 text-6xl font-bold">Reflections</h1> */}
                 <h2 className="text-white font-bold text-lg mt-2">
                   {/* Email: richelleshim@g.ucla.edu */}
                 </h2>

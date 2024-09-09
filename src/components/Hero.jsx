@@ -7,10 +7,6 @@ import FadeModalDialog from "./DescriptionModal";
 import DescriptionModal from "./DescriptionModal";
 
 const Hero = () => {
-  useGSAP(() => {
-    gsap.to("#hero", { opacity: 1, delay: 1 });
-  }, []);
-
   const videoRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
 
@@ -21,6 +17,9 @@ const Hero = () => {
       videoRef.current.play();
     }
   };
+  useGSAP(() => {
+    gsap.to("#hero", { opacity: 1, delay: 1 });
+  }, []);
 
   // Stop video on mouse leave
   const handleMouseLeave = () => {
@@ -66,13 +65,13 @@ const Hero = () => {
           </div>
         )}
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
-        {isHovering && (
+        {!isHovering && (
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover flex"
             autoPlay
             playsInline
-            loop
+            // loop
           >
             <source src={novaVideo} type="video/mp4" />
           </video>
