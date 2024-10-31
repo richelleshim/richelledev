@@ -5,6 +5,9 @@ import {
   bruinGramHeroImg,
   bruinGramVid,
   bruingramTitleImg,
+  impactImg,
+  impactLogoImg,
+  impactVideo,
   nextArrow,
   plutusLogoImg,
   previousArrow,
@@ -76,7 +79,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
 
   return (
     <div className="flex-center h-[46] screen-max-width ">
-      <div className="card-container relative">
+      <div className="card-container">
         {validLink ? (
           <NavLink className="nav-link" to={link}>
             Hello
@@ -101,7 +104,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
           <button className="pr-3 left-0 opacity-0 cursor-default">
             <img src={previousArrow} height={15} width={15} />
           </button>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-4 flex-center overflow-auto">
             {/* <ProjectModal>
               <ProjectDescription
                 title=""
@@ -150,14 +153,16 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 title="Wrapped"
                 titleImg={spotifySvg}
                 heroImg={spotifyHeroImg}
-                subtitle="Bruingram"
-                titleImgWidth="300px"
-                titleImgHeight="70px"
+                subtitle=""
+                titleImgWidth="50px"
+                titleImgHeight="50px"
                 genre="2024 | Design + Web Dev"
                 paragraphs={[
                   " Spotify has changed the streaming platform in the last decade, combining ways for people to connect with music with their friend feature, public profiles, shareable playlists, Jams, and, most famously, their Wrapped.",
                   "At the end of the year, Spotify Wrapped gifts users a summary of their listening history in the last year, where they are able to reflect on their last year through the music they listened to.",
-                  "Taking inspiration from this, I thought that it would be cool to display Spotify’s shareholder’s report in their iconic “Spotify Wrapped” format.",
+                  "When I saw Spotify's shareholder's report, I felt that it didn't convey the Spotify that we consumers know and love. Simply put, it was too boring for a company like Spotify.",
+                  "Although the report's intended audience may find this presentation unprofessional for a shareholder's report, I wondered if my generation (Gen-Z) would also dislike a presentation like this.",
+                  "I don't think they would. In fact, a format like this is easy to read on a mobile phone, and, with the decline in attention spans, this reinvention may even be a necessity in the future.",
                 ]}
                 technologies="React, GSAP, Figma, Slider"
                 isDirectors={false}
@@ -165,7 +170,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
               />
             </ProjectCard>
 
-            <ProjectCard
+            {/* <ProjectCard
               title="Plutus Banking App"
               rating="50%"
               season="2024"
@@ -188,7 +193,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 isDirectors={false}
                 heroVideo={spotifyVideo}
               />
-            </ProjectCard>
+            </ProjectCard> */}
 
             <ProjectCard
               title="Bruingram"
@@ -213,21 +218,21 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 directors="Elizabeth, Yousra, Chai, Jennifer, Daniel, Richelle"
                 isDirectors={true}
                 heroVideo={bruinGramVid}
+                fullVideo={false}
               />
             </ProjectCard>
-
             <ProjectCard
-              title="Bruingram"
+              title="Impact"
               rating="50%"
               season="2023 | 3 episodes"
-              caption="a fun take on a UCLA-centered social media app"
-              image={bruinGramCardImg}
+              caption="A Nova, Tech for Good Production. Teaching how to react in intimidating situations"
+              image={impactImg}
               year="2024"
             >
               <ProjectDescription
                 title=""
-                titleImg={bruingramTitleImg}
-                heroImg={bruinGramHeroImg}
+                titleImg={impactLogoImg}
+                heroImg={impactImg}
                 subtitle="Bruingram"
                 titleImgWidth="300px"
                 titleImgHeight="70px"
@@ -238,9 +243,10 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 technologies="React, MaterialUI, Firebase, Git"
                 directors="Elizabeth, Yousra, Chai, Jennifer, Daniel, Richelle"
                 isDirectors={true}
-                heroVideo={bruinGramVid}
+                heroVideo={impactVideo}
               />
             </ProjectCard>
+
             <ProjectCard
               title="Bruingram"
               rating="50%"

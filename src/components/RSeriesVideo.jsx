@@ -41,7 +41,7 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
 
   return (
     <section
-      className="relative w-full h-[68vh] pt-10 opacity-0 bg-black"
+      className="relative w-full h-[80vh] pt-10 opacity-0 bg-black"
       id="intro"
     >
       <div

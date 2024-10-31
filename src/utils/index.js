@@ -147,7 +147,7 @@ export const plutusLogoImg = plutusLogo;
 import bruinGramHero from "/images/projects/bruinGram.png";
 export const bruinGramHeroImg = bruinGramHero;
 
-import bruinVid from "/videos/bruingramVideo.mp4";
+import bruinVid from "/videos/bruingram1.mp4";
 export const bruinGramVid = bruinVid;
 
 import bruinLogo from "/images/projects/bruingramLogo.svg";
@@ -187,3 +187,15 @@ export const timBernersLeeImg = timBernersLee;
 import neflix from "/videos/netflix.mp3";
 export const netflixSound = neflix;
 
+
+
+import impactVid from "/videos/impact3.mp4";
+export const impactVideo = impactVid;
+
+import impact from "/images/projects/impact2.png";
+export const impactImg = impact;
+
+
+
+import impactLogo from "/images/projects/impactLogo.png";
+export const impactLogoImg = impactLogo;
