@@ -1,0 +1,76 @@
+/* src/mobile/mobile.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mobile-container {
+    padding: 16px;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mobile-header {
+    padding: 12px 0;
+    text-align: center;
+  }
+  
+  .mobile-title {
+    color: #E50914;
+    @apply font-bold text-4xl;
+
+  }
+  
+
+  
+  .about-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 12px auto;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 8px 0;
+    color: #e0e0e0;
+  }
+  
+  .projects-list {
+    padding: 16px 0;
+  }
+  
+  .project-card {
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    color: #E0E0E0;
+    transition: transform 0.2s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-top: 4px;
+  }
+  
