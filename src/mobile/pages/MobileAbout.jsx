@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import { comingSoonImg } from "/Users/richelleshim/richelle-netflix/src/utils/index.js";
+import { comingSoonImg } from "../utils/index.js";
 
 const MobileAbout = () => {
   return (
