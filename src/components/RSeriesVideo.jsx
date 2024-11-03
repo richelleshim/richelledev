@@ -58,8 +58,8 @@ const RSeriesVideo = ({ title, subtitle, backgroundImage, vid }) => {
         <audio ref={audioRef} src={netflixSound} />
 
         {!isHovering && (
-          <div className="w-[90%] ] z-10">
-            <img height={100} width={800} src={rseries} />
+          <div className="w-[90%] z-10">
+            <img height={100} src={rseries} />
             <h1 className="text-white text-6xl font-bold   ">{title}</h1>
             <p className="text-gray-50 text-lg mt-2 w-[75%]">{subtitle}</p>
           </div>
