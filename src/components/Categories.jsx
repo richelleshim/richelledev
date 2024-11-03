@@ -124,7 +124,7 @@ const Categories = ({ page = "", title, items, link = "" }) => {
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          <button className="opacity-1 pr-3 left-2" onClick={handlePrev}>
+          <button className="opacity-1 pr-3 left-2 mb-32" onClick={handlePrev}>
             <img src={previousArrow} height={15} width={15} />
           </button>
           <div className="grid grid-cols-4 gap-4 flex-center overflow-auto">
@@ -143,7 +143,7 @@ const Categories = ({ page = "", title, items, link = "" }) => {
               />
             ))}
           </div>
-          <button className="opacity-1 pl-3 right-0" onClick={handleNext}>
+          <button className="opacity-1 pl-3 right-0 mb-32" onClick={handleNext}>
             <img src={nextArrow} height={15} width={15} />
           </button>
         </div>
