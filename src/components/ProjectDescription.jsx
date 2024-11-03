@@ -78,15 +78,17 @@ const ProjectDescription = ({
             </>
           ) : (
             <>
-              <div className="w-1/2 p-10 text-white overflow-hidden flex flex-col justify-center space-y-6 z-10">
-                <img height={50} width={250} src={rProductionImg} />
-                <div className="text-5xl flex font-extrabold gap-2">
-                  <img
-                    src={titleImg}
-                    width={titleImgWidth}
-                    height={titleImgWidth}
-                  />
-                  {title}
+              <div className="w-1/2 p-10 text-white overflow-hidden flex flex-col  justify-center space-y-6 z-10">
+                <div className="pl-0 relative">
+                  <img height={50} width={250} src={rProductionImg} />
+                  <div className="text-5xl flex font-extrabold gap-2">
+                    <img
+                      src={titleImg}
+                      width={titleImgWidth}
+                      height={titleImgWidth}
+                    />
+                    {title}
+                  </div>
                 </div>
                 <div className="text-xl sm:text-3xl font-bold">{subtitle}</div>
                 <div className="text-med font-bold">{genre}</div>
@@ -110,10 +112,10 @@ const ProjectDescription = ({
 
                 <div className="flex align-left grid-cols-4 gap-4">
                   <button
-                    className="hover-button text-sm text-black rounded"
+                    className="hover-button text-sm text-black rounded items-center"
                     onClick={handleHoverButtonClick} // Click handler for hover button
                   >
-                    <div className="flex-center font-semibold gap-2">
+                    <div className="flex-center font-semibold">
                       <img src={hoverIcon} width={20} height={20} />
                       {fullVideo ? "PLAY" : "HOVER"}
                     </div>

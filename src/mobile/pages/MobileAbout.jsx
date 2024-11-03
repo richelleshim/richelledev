@@ -9,7 +9,10 @@ const MobileAbout = () => {
         <h1 className="mobile-title">MOBILE IN PROGRESS</h1>
       </header>
       <section className="about-content">
-        <img className="flex-center align-center justify-center" src={comingSoonImg} />
+        <img
+          className="mobile-img flex-center align-center justify-center"
+          src={comingSoonImg}
+        />
 
         <p className="about-text">
           Hello! I'm Richelle Shim, a junior at UCLA majoring in Math of
