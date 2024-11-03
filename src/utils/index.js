@@ -164,6 +164,9 @@ export const bruinGramCardImg = bruinGramCard;
 import richflix from "/images/RICHFLIX.png";
 export const richflixImg = richflix;
 
+import onlyOn from "/images/onlyOn.png";
+export const onlyOnImg = onlyOn;
+
 import comingSoon from "/images/comingSoon.png";
 export const comingSoonImg = comingSoon;
 
