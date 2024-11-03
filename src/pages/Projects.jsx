@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import RSeries from "../components/RSeries";
 import {
   heroImg

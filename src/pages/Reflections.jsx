@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import { heroImg, reflectionVideo } from "../utils";
 import RSeriesVideo from "../components/RSeriesVideo";
 import ComingSoon from "../components/ComingSoon";
