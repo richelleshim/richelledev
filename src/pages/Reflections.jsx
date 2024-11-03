@@ -7,6 +7,10 @@ import RSeriesVideo from "../components/RSeriesVideo";
 import ComingSoon from "../components/ComingSoon";
 
 const Reflections = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="w-full bg-black relative">
       <div className="h-5/6 w-full  flex-center flex-col">

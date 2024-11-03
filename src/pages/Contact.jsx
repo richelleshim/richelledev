@@ -53,6 +53,10 @@ import React from "react";
 import { heroImg, rseries } from "../utils";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section
       className="w-full relative"

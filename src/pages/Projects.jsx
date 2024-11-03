@@ -18,6 +18,10 @@ import ProjectCategories from "../components/ProjectCategories";
 import ComingSoon from "../components/ComingSoon";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="w-full bg-black relative">
       <div className="h-5/6 w-full flex-center flex-col">

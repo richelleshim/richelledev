@@ -62,6 +62,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     gsap.to("#season1", { opacity: 1, delay: 1.5 });
 
     ScrollTrigger.create({
