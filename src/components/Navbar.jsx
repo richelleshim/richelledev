@@ -1,4 +1,4 @@
-import { githubIcon, logoImg } from "../utils";
+import { logoImg } from "../utils";
 import { navLists } from "../constants";
 import { NavLink } from "react-router-dom";
 

@@ -1,8 +1,5 @@
 import React from "react";
 import { heroImg, reflectionVideo } from "../utils";
-import RSeries from "../components/RSeries";
-import { season1 } from "../constants";
-import Categories from "../components/Categories";
 import RSeriesVideo from "../components/RSeriesVideo";
 import ComingSoon from "../components/ComingSoon";
 

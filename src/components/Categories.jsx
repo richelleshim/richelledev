@@ -3,7 +3,6 @@ import Card from "./Card";
 import { nextArrow, previousArrow, redNextArrow } from "../utils";
 import { NavLink } from "react-router-dom";
 import gsap from "gsap";
-import ProjectCard from "./ProjectCard";
 
 const Categories = ({ page = "", title, items, link = "" }) => {
   const isProjects = page === "Projects";

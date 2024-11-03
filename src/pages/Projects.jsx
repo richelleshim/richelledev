@@ -1,21 +1,9 @@
 import React from "react";
 import RSeries from "../components/RSeries";
 import {
-  bruinGramHeroImg,
-  bruinGramVid,
-  bruingramTitleImg,
-  heroImg,
-  plutusLogoImg,
-  spotifyHeroImg,
-  spotifyVideo,
+  heroImg
 } from "../utils";
-import Categories from "../components/Categories";
-import { favoriteList, progtools, projects } from "../constants";
-import ProjectModal from "../components/ProjectModal";
-import ProjectDescription from "../components/ProjectDescription";
-import ProjectCard from "../components/ProjectCard";
 import ProjectCategories from "../components/ProjectCategories";
-import ComingSoon from "../components/ComingSoon";
 
 const Projects = () => {
   useEffect(() => {

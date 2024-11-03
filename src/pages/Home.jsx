@@ -1,14 +1,10 @@
 import React, { useEffect } from "react";
-import { heroImg } from "../utils";
-import RSeries from "../components/RSeries";
-import Card from "../components/Card";
 import Hero from "../components/Hero";
 import {
   aboutMePreview,
   clubs,
   favoriteList,
-  learn,
-  season1,
+  learn
 } from "../constants";
 import Categories from "../components/Categories";
 import gsap from "gsap";

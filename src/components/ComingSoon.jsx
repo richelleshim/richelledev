@@ -1,6 +1,6 @@
 import React from "react";
 
-import { comingSoonImg, logoImg, richflixImg, rseries } from "../utils";
+import { comingSoonImg } from "../utils";
 
 const ComingSoon = ({ heroImg }) => {
   return (

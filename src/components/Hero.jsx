@@ -1,9 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
-import { heroImg, netflixSound, novaImg, novaVideo, rseries } from "../utils";
+import React, { useRef, useState } from "react";
+import { novaImg, novaVideo, rseries } from "../utils";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Categories from "./Categories";
-import FadeModalDialog from "./DescriptionModal";
 import DescriptionModal from "./DescriptionModal";
 
 const Hero = () => {
