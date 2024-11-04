@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="md:w-full w-full">
           <RSeries
             seriesTitle="Projects"
-            subtitle="Here are a few projects of mine!"
+            subtitle="Here are a few projects of mine! Click on Learn More to see more about the project!"
             // onPlay=""
             backgroundImage={heroImg}
           />
