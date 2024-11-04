@@ -1,14 +1,15 @@
 import React, { useRef, useState } from "react";
 import {
   bruinGramHeroImg,
-  bruinGramVid, bruingramTitleImg,
+  bruinGramVid,
+  bruingramTitleImg,
   githubIcon,
   hoverIcon,
   plutusLogoImg,
   rProductionImg,
   spotifyHeroImg,
   spotifySvg,
-  spotifyVideo
+  spotifyVideo,
 } from "../utils";
 import ProjectDescription from "./ProjectDescription";
 

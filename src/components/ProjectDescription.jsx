@@ -46,6 +46,7 @@ const ProjectDescription = ({
   const handleHoverButtonClick = () => {
     if (fullVideo) {
       setShowFullVideo(true);
+      
     }
   };
 
@@ -66,6 +67,7 @@ const ProjectDescription = ({
                 autoPlay
                 playsInline
                 loop
+                muted={true}
               >
                 <source src={heroVideo} type="video/mp4" />
               </video>

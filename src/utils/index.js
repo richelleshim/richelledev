@@ -202,3 +202,27 @@ export const impactImg = impact;
 
 import impactLogo from "/images/projects/impactLogo.png";
 export const impactLogoImg = impactLogo;
+
+
+import richFlixVid from "/videos/richFlix.mp4";
+export const richFlixVideo = richFlixVid;
+
+import cakeCraftVid from "/videos/cakeCraft.mp4";
+import cakeCraftLogo from "/images/projects/cakeCraftLogo.png";
+import translateMeVid from "/videos/translateMe.mp4";
+import translateMeLogo from "/images/projects/translateMeLogo.png";
+import richFlixHero from "/images/projects/richFlixHero.png";
+import translateMeHero from "/images/projects/translateMeHero.png";
+import translateMe from "/images/projects/translateMe.png";
+
+
+
+export const translateMeVideo = translateMeVid;
+export const cakeCraftLogoImg = cakeCraftLogo;
+export const cakeCraftVideo = cakeCraftVid;
+export const translateMeLogoImg = translateMeLogo;
+export const richFlixHeroImg = richFlixHero;
+export const translateMeHeroImg = translateMeHero;
+export const translateMeThumbnail = translateMe;
+
+

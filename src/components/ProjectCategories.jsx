@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
@@ -19,6 +17,15 @@ import {
   impactVideo,
   onlyOnImg,
   richflixImg,
+  cakeCraftLogoImg,
+  cakeCraftImg,
+  cakeCraftVideo,
+  richFlixVideo,
+  translateMeLogoImg,
+  translateMeVideo,
+  richFlixHeroImg,
+  translateMeThumbnail,
+  translateMeHeroImg,
 } from "../utils";
 
 const ProjectCategories = ({ page = "", title, items, link = "" }) => {
@@ -160,49 +167,55 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
               title="TranslateMe"
               rating="100%"
               season="2023 | 3 episodes"
-              caption="chatGPT helping people communication- one line at a time"
-              image={bruinGramCardImg}
+              caption="ChatGPT helping people communication- one line at a time"
+              image={translateMeThumbnail}
               year="2024"
             >
               <ProjectDescription
                 title=""
-                titleImg={bruingramTitleImg}
-                heroImg={bruinGramHeroImg}
+                titleImg={translateMeLogoImg}
+                heroImg={translateMeHeroImg}
                 subtitle="TranslateMe"
                 titleImgWidth="300px"
                 titleImgHeight="70px"
                 genre="2024 | Design + Web Dev"
-                paragraphs={["How to cometioaenfadsfsdf"]}
-                technologies="React, MaterialUI, Firebase, Git"
+                paragraphs={[
+                  "Growing up Korean-American in the digital age, I was able to watch the language barrier become smaller and smaller as technology improved. As Google Translate improved, so did my community's lives in America. As more shows provided translated captions, my parents and I were able to watch the same shows and make more memories together.",
+                  "With chatGPT, I watched more people use it in their daily lives to translate, as AI could capture the nuances of the message more than google translate. I had wanted to explore openAI's API, and I felt that this was the perfect project to try out! ",
+                ]}
+                technologies="React, MaterialUI, Git"
                 directors=""
                 isDirectors={false}
-                heroVideo={bruinGramVid}
+                heroVideo={translateMeVideo}
               />
             </ProjectCard>
+
             <ProjectCard
               title="Cake Craft"
               rating="50%"
-              season="2023 | 3 episodes"
+              season="2024 "
               caption="a fun take on a UCLA-centered social media app"
-              image={bruinGramCardImg}
+              image={cakeCraftImg}
               year="2024"
             >
               <ProjectDescription
                 title=""
-                titleImg={bruingramTitleImg}
-                heroImg={bruinGramHeroImg}
-                subtitle="TranslateMe"
+                titleImg={cakeCraftLogoImg}
+                heroImg={cakeCraftImg}
+                subtitle="Computer Graphics"
                 titleImgWidth="300px"
                 titleImgHeight="70px"
                 genre="2024 | Design + Web Dev"
-                paragraphs={["How to cometioaenfadsfsdf"]}
+                paragraphs={[
+                  "Cake Craft was the first game that I worked on that integrated computer graphics! Users can choose their cake flavor, watch their cake bake, and decorate their cake with different frosting flavors and toppings! At the end, users can celebrate with sprinkles and a jazzy rendition of Happy Birthday (since the original Happy Birthday is dreadful)! ",
+                ]}
                 technologies="React, MaterialUI, Firebase, Git"
                 directors=""
                 isDirectors={false}
-                heroVideo={bruinGramVid}
+                heroVideo={cakeCraftVideo}
               />
             </ProjectCard>
-            <ProjectCard
+            {/* <ProjectCard
               title="Plutus Banking App"
               rating="50%"
               season="2023 | 3 episodes"
@@ -224,7 +237,14 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 isDirectors={false}
                 heroVideo={bruinGramVid}
               />
-            </ProjectCard>
+
+                cakeCraftLogoImg,
+  cakeCraftImg,
+  cakeCraftVideo,
+  richFlixVideo,
+  translateMeLogoImg,
+  translateMeVideo
+            </ProjectCard> */}
             <ProjectCard
               title="Personal Website!"
               rating="100%"
@@ -236,21 +256,19 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
               <ProjectDescription
                 title=""
                 titleImg={richflixImg}
-                heroImg={bruinGramHeroImg}
-                subtitle=""
+                heroImg={richFlixHeroImg}
+                subtitle="Personal Website"
                 titleImgWidth="200px"
                 titleImgHeight="70px"
                 genre="2024 | Design + Web Dev"
                 paragraphs={[
-                 "I always say that my life isn't a movie- it's a 80 season show...which is why I felt that the best way to represent me (!) was through a Netflix-themed website!",
-                  "I made this website in a frenzy. I had so much fun during the process that I was indifferent to the way time was passing. Lunch time? Didn't exist. Time to sleep? Not until I finished editing this video.",
-                  "Making this website made me realize that I really wanted to do what I love in my life. I work best whenever I become obsessed.",
-                  "When I was considering becoming an actuary and studying probability (which I also love), I was coding for fun, and I realized that coding and solving problems as a career is a future I would love. Coding is like an art, where there is always room for improvement, and it doesn't allow you to be static. You need to constantly be learning and growing. ",
+                  "I always say that my life isn't a movie- it's a 80 season show...which is why I felt that the best way to represent me (!) was through a Netflix-themed website!",
+                  "I made this website in a period of life when I was considering becoming an actuary. I was coding for fun, and I realized that coding and solving problems as a career is a future I would love. Coding is like an art, where there is always room for improvement, and it doesn't allow you to be static. You need to constantly be learning and growing. How amazing is that?",
                 ]}
-                technologies="React, JavaScript, NextJS, Git"
+                technologies="React, JavaScript, GSAP, NextJS, Git"
                 directors=""
                 isDirectors={false}
-                heroVideo={bruinGramVid}
+                heroVideo={richFlixVideo}
               />
             </ProjectCard>
 
