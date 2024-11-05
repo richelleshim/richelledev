@@ -16,6 +16,7 @@ const ProjectDescription = ({
   isDirectors,
   directors,
   fullVideo = true,
+  githubLink,
 }) => {
   const videoRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
@@ -46,7 +47,6 @@ const ProjectDescription = ({
   const handleHoverButtonClick = () => {
     if (fullVideo) {
       setShowFullVideo(true);
-      
     }
   };
 
@@ -122,9 +122,17 @@ const ProjectDescription = ({
                       {fullVideo ? "PLAY" : "HOVER"}
                     </div>
                   </button>
-                  <button className="github-button text-white px-4 py-2 rounded">
+                  <button
+                    onClick={() => window.open(githubLink, "_blank")} // Open link in new tab
+                    className="github-button text-white px-4 py-2 rounded flex-center"
+                  >
                     <div className="flex-center text-med gap-2 font-semibold">
-                      <img src={githubIcon} width={40} height={40} />
+                      <img
+                        src={githubIcon}
+                        width={40}
+                        height={40}
+                        alt="GitHub Icon"
+                      />
                       src
                     </div>
                   </button>

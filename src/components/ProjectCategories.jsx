@@ -26,7 +26,6 @@ import {
   richFlixHeroImg,
   translateMeThumbnail,
   translateMeHeroImg,
-
 } from "../utils";
 
 const ProjectCategories = ({ page = "", title, items, link = "" }) => {
@@ -86,6 +85,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 technologies="React, GSAP, Figma, Slider"
                 isDirectors={false}
                 heroVideo={spotifyVideo}
+                githubLink="https://github.com/richelleshim/spotifyReimagined"
               />
             </ProjectCard>
 
@@ -138,6 +138,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 isDirectors={true}
                 heroVideo={bruinGramVid}
                 fullVideo={false}
+                githubLink="https://github.com/richelleshim/cs35l_project"
               />
             </ProjectCard>
             <ProjectCard
@@ -161,6 +162,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 directors="Priyanshu, Ishan, Richelle, Kati"
                 isDirectors={true}
                 heroVideo={impactVideo}
+                githubLink=""
               />
             </ProjectCard>
 
@@ -188,6 +190,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 directors=""
                 isDirectors={false}
                 heroVideo={translateMeVideo}
+                githubLink="https://github.com/richelleshim/translate"
               />
             </ProjectCard>
 
@@ -214,6 +217,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 directors=""
                 isDirectors={false}
                 heroVideo={cakeCraftVideo}
+                githubLink="https://github.com/susanaasun/Cake-Craft"
               />
             </ProjectCard>
             {/* <ProjectCard
@@ -270,6 +274,7 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 directors=""
                 isDirectors={false}
                 heroVideo={richFlixVideo}
+                githubLink="https://github.com/richelleshim/richelledev"
               />
             </ProjectCard>
           </div>
