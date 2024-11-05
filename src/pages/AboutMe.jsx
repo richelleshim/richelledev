@@ -17,8 +17,7 @@ const AboutMe = () => {
   }, []);
 
   useEffect(() => {
-    gsap.to("#season1", { opacity: 1, delay: 1.5 });
-
+    
     ScrollTrigger.create({
       trigger: "#season1",
       start: "top 70%",

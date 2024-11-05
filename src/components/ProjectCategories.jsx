@@ -26,8 +26,7 @@ import {
   richFlixHeroImg,
   translateMeThumbnail,
   translateMeHeroImg,
-  novaLogoImg,
-  novaAtEnzosImg,
+
 } from "../utils";
 
 const ProjectCategories = ({ page = "", title, items, link = "" }) => {

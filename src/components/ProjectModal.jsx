@@ -2,13 +2,10 @@ import { Transition } from "react-transition-group";
 import Modal from "@mui/joy/Modal";
 import ModalDialog from "@mui/joy/ModalDialog";
 import DialogContent from "@mui/joy/DialogContent";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ModalClose } from "@mui/joy";
 import {
-  ArrowForwardIos,
-  NavigateNext,
-  AdsClick,
-  KeyboardDoubleArrowRight,
+  KeyboardDoubleArrowRight
 } from "@mui/icons-material";
 
 const ProjectModal = ({

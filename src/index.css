@@ -336,14 +336,14 @@ footer p {
   z-index: 5;
 }
 
-.showcase-container {
+/* .showcase-container {
   width: (max-content);
   height: 926px;
   overflow: hidden;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 70%),
     url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
+} */
 
 .proj-card-wrap {
   transition: transform 0.3s ease;
