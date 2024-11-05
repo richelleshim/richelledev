@@ -4,9 +4,7 @@ import ModalDialog from "@mui/joy/ModalDialog";
 import DialogContent from "@mui/joy/DialogContent";
 import { useState, useEffect } from "react";
 import { ModalClose } from "@mui/joy";
-import {
-  KeyboardDoubleArrowRight
-} from "@mui/icons-material";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 const ProjectModal = ({
   children,
@@ -42,7 +40,7 @@ const ProjectModal = ({
       >
         <h1 className="text-sm">
           Learn More!
-          <KeyboardDoubleArrowRight
+          <KeyboardDoubleArrowRightIcon
             className={`transition-opacity duration-300`}
             fontSize="small"
           />
