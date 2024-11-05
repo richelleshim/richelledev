@@ -117,7 +117,7 @@ const ProjectDescription = ({
                     className="hover-button text-sm text-black rounded items-center"
                     onClick={handleHoverButtonClick} // Click handler for hover button
                   >
-                    <div className="flex-center font-semibold">
+                    <div className="flex-center font-semibold gap-2">
                       <img src={hoverIcon} width={20} height={20} />
                       {fullVideo ? "PLAY" : "HOVER"}
                     </div>

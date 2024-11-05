@@ -66,7 +66,7 @@ const Home = () => {
     <section className=" bg-black flex-center">
       <div className="h-5/6  flex-col">
         <Hero />
-        <div className="pd-2">
+        <div className="pd-1">
           <div id="item1" className="opacity-0">
             <Categories title="My Favorites" items={favoriteList} />
           </div>

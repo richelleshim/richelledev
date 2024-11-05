@@ -122,10 +122,9 @@ const Categories = ({ page = "", title, items, link = "" }) => {
         <div
           className="flex overflow-hidden w-full"
           onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
         >
           <button className="opacity-1 pr-3 left-2 mb-32" onClick={handlePrev}>
-            <img src={previousArrow} height={15} width={15} />
+            <img src={previousArrow} height={50} width={50} />
           </button>
           <div className="grid grid-cols-4 gap-4 flex-center overflow-auto">
             {visibleItems.map((list, index) => (
@@ -139,12 +138,11 @@ const Categories = ({ page = "", title, items, link = "" }) => {
                 caption={list.caption}
                 image={list.image}
                 onMouseEnter={() => handleCardHover(index)}
-                onMouseLeave={() => handleCardLeave(index)}
               />
             ))}
           </div>
           <button className="opacity-1 pl-3 right-0 mb-32" onClick={handleNext}>
-            <img src={nextArrow} height={15} width={15} />
+            <img src={nextArrow} height={50} width={50} />
           </button>
         </div>
         <div className="flex justify-between items-center w-full relative"></div>

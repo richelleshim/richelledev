@@ -26,6 +26,8 @@ import {
   richFlixHeroImg,
   translateMeThumbnail,
   translateMeHeroImg,
+  novaLogoImg,
+  novaAtEnzosImg,
 } from "../utils";
 
 const ProjectCategories = ({ page = "", title, items, link = "" }) => {
@@ -271,8 +273,6 @@ const ProjectCategories = ({ page = "", title, items, link = "" }) => {
                 heroVideo={richFlixVideo}
               />
             </ProjectCard>
-
-            {/* Add other ProjectCard components as needed */}
           </div>
 
           <button className="pl-3 opacity-0 cursor-default">

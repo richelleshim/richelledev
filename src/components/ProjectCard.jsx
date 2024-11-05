@@ -8,8 +8,8 @@ const ProjectCard = forwardRef(
     return (
       // // <div className="card group" ref={ref}>
       // <>
-      <div className="card" ref={ref}>
-        <div className="card-wrap" ref={ref}>
+      <div className="proj-card" ref={ref}>
+        <div className="proj-card-wrap" ref={ref}>
           <div>
             <div className="w-full relative h-48">
               <img src={image} alt={title} className=" h-48 object-cover" />

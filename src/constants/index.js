@@ -236,7 +236,7 @@ export const season2 = [
   {
     id: 3,
     title: "Math & The Truth",
-    rating: "100000%",
+    rating: "100%",
     season: "20 Seasons",
     year: "2003",
     caption:
@@ -347,7 +347,7 @@ export const projects = [
   {
     id: 3,
     title: "Cake Craft",
-    rating: "100000%",
+    rating: "100%",
     season: "20 Seasons",
     year: "2003",
     caption:
