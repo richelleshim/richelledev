@@ -3,6 +3,9 @@ import Card from "./Card";
 import { nextArrow, previousArrow, redNextArrow } from "../utils";
 import { NavLink } from "react-router-dom";
 import gsap from "gsap";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { IconButton } from "@mui/material";
+import { NavigateBefore, NavigateNext } from "@mui/icons-material";
 
 const Categories = ({ page = "", title, items, link = "" }) => {
   const isProjects = page === "Projects";
@@ -123,9 +126,17 @@ const Categories = ({ page = "", title, items, link = "" }) => {
           className="flex overflow-hidden w-full"
           onMouseEnter={() => setIsHovering(true)}
         >
-          <button className="opacity-1 pr-3 left-2 mb-32" onClick={handlePrev}>
+          {/* <button className="opacity-1 pr-3 left-2 mb-32" onClick={handlePrev}>
             <img src={previousArrow} height={50} width={50} />
-          </button>
+          </button> */}
+          <IconButton
+            className="opacity-1 pr-3 left-2 mb-32"
+            onClick={handlePrev}
+            size="small"
+            sx={{ color: "white" }}
+          >
+            <NavigateBefore />
+          </IconButton>
           <div className="grid grid-cols-4 gap-4 flex-center overflow-auto">
             {visibleItems.map((list, index) => (
               <Card
@@ -141,9 +152,17 @@ const Categories = ({ page = "", title, items, link = "" }) => {
               />
             ))}
           </div>
-          <button className="opacity-1 pl-3 right-0 mb-32" onClick={handleNext}>
+          <IconButton
+            className="opacity-1 pl-3 right-0 mb-32"
+            onClick={handlePrev}
+            size="small"
+            sx={{ color: "white" }}
+          >
+            <NavigateNext />
+          </IconButton>
+          {/* <button className="opacity-1 pl-3 right-0 mb-32" onClick={handleNext}>
             <img src={nextArrow} height={50} width={50} />
-          </button>
+          </button> */}
         </div>
         <div className="flex justify-between items-center w-full relative"></div>
       </div>
